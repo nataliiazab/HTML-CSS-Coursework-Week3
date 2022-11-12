@@ -13,16 +13,21 @@
       .card {
         padding: 15px;
         background-color: rgb(188, 241, 224);
-        display: grid;
-        grid-template-columns: repeat (3, auto);
-        grid-template-rows: repeat (3, auto);
-        grid-template-areas: "h h
-        p t
-        c c";
+        display: flex;
+        flex-direction: column;
       }
 
       h1 {
         color: brown;
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .text {
+        padding: 15px;
       }
     </style>
   </head>
@@ -31,18 +36,21 @@
       <div class="heading">
         <h1>Natalie Zablotska</h1>
       </div>
-      <div class="photo">
-        <img
-          src="./291628182_5343609169050856_8696127131316336191_n.jpg"
-          alt="photo of Natalie"
-        />
-      </div>
-      <div class="text">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quo
-          provident repudiandae quia at quas modi, vel facilis cupiditate natus,
-          necessitatibus labore libero deserunt quam non nisi eos odio id.
-        </p>
+      <div class="wrapper">
+        <div class="photo">
+          <img
+            src="./291628182_5343609169050856_8696127131316336191_n.jpg"
+            alt="photo of Natalie"
+          />
+        </div>
+        <div class="text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            quo provident repudiandae quia at quas modi, vel facilis cupiditate
+            natus, necessitatibus labore libero deserunt quam non nisi eos odio
+            id.
+          </p>
+        </div>
       </div>
       <div class="contacts">
         <ul>
